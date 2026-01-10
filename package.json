@@ -24,7 +24,7 @@
   "scripts": {
     "start": "bun run start:dev",
     "start:dev": "bun run --watch ./src/main.ts --beta",
-    "sql-gen": "kysely-codegen --url=\"mysql://root:123456789@localhost:3306/test\" --out-file ./src/sqlOperate/db.type.ts"
+    "sql-gen": "kysely-codegen --url=\"mysql://root:123456@localhost:3306/test\" --out-file ./src/mysqlOperate/db.type.ts"
   },
   "dependencies": {
     "@types/lodash": "^4.17.21",
