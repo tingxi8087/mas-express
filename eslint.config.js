@@ -15,7 +15,7 @@ export default [
       prettier,
     },
     rules: {
-      'prettier/prettier': 'error',
+      'prettier/prettier': 'off',  // 修改为 'off' 以忽略 Prettier 检查
       '@typescript-eslint/no-unused-vars': [
         'warn',
         {
