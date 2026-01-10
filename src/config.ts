@@ -1,5 +1,8 @@
 import type { MasAppConfig } from 'mas-server';
 import type { PoolOptions } from 'mysql2';
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
+const argv: any = yargs(hideBin(process.argv)).parse();
 interface serverConfig {
   mysql: PoolOptions;
   port: number;
@@ -22,4 +25,9 @@ export const betaConfig: serverConfig = {
     openCors: true,
     exposeApiDocs: true,
   },
+};
+
+export const isBeta = argv.beta;
+export const getConfig = (): serverConfig => {
+  return betaConfig;
 };
