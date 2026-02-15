@@ -32,20 +32,20 @@ export const config: MasConfig<
   // permission: ['test'],
 };
 export const handler: MasHandler<typeof config> = async (req, res) => {
-  const studentResult = await db
-    .insertInto('student')
-    .values({
-      name: '测试学生',
-      age: 18,
-    })
-    .execute();
-  const teacherResult = await db
-    .insertInto('teacher')
-    .values({
-      name: '测试老师',
-      age: '30',
-    })
-    .execute();
+  // const studentResult = await db
+  //   .insertInto('student')
+  //   .values({
+  //     name: '测试学生',
+  //     age: 18,
+  //   })
+  //   .execute();
+  // const teacherResult = await db
+  //   .insertInto('teacher')
+  //   .values({
+  //     name: '测试老师',
+  //     age: '30',
+  //   })
+  //   .execute();
   // console.log(studentResult[0]?.insertId, teacherResult.insertId);
 
   res.reply({});
