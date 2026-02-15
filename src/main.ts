@@ -1,9 +1,8 @@
-import 'module-alias/register';
 import c from 'ansi-colors';
 import moment from 'moment-timezone';
 import { getApp } from 'mas-server';
 import path from 'path';
-import { getConfig, isBeta } from './config';
+import { getConfig, isBeta } from '@/config';
 import { createServerErrorHandler } from './middleware/server-error-handler.middleware';
 
 moment.tz.setDefault('Asia/Shanghai');

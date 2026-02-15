@@ -1,4 +1,3 @@
-import 'module-alias/register';
 import { test, expect, describe } from 'bun:test';
 import { db } from './mysqlOperate';
 
